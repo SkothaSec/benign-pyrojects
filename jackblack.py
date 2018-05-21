@@ -3,7 +3,7 @@
 import random
 card_deck = [2,3,4,5,6,7,8,9,10,"J","Q","K","A"] * 4
 card_value = []
-quit = ['stop', 'quit', 'end', 'i hate myself', 'i quit because i am a sore loser', "my mom doesn't love me", "i diddle sheep like a welshman", "i want to kill myself"]
+quit = ['stop', 'quit', 'end']
 hold = "hold"
 hit = "hit"
 acceptable_answers = [hit, hold]
@@ -30,7 +30,7 @@ def win_condition(card_sum):
     if card_sum < 22 and card_sum > 16:
         return "YOU WIN!"
     else:
-        return "YOU SUCK!"
+        return "YOU LOSE!"
 
 
 
